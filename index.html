@@ -1,0 +1,128 @@
+<html>
+    
+    
+    <head>
+    <body id = table2>
+        <meta charset ="UTF -8"/>
+        
+            <meta name ="viewport" content = "width =device-width, initial - scale =1.0"/>
+    
+            
+        <title>LOGIN</title>
+            
+                <h2><center>LOGIN</center></h2> <br><br><br><br><br>
+                
+                  <center>
+                      
+                      <form>
+              
+                  <!--USERFORM-->
+                              
+                      <label for ="username">Username:</label>
+                        <input type = "text" id="username" name ="username"/><br><br>
+          
+                            <label for ="password">Password:</label>
+                              <input type = "Password" id="password" name ="password"/> <br><br>
+
+                                 <input type = "checkbox" id ="remember" name = "remember"/>
+                                   <label for = "remember"id = table5>Remember me </label>   <br><br> 
+                      
+                                      <center><button type ="button" id = "submit" onclick = "checklogin()">Submit</button></center><br><br>
+                                        <button type = "button" id = table3 onclick="clearForm()">Cancel</button>
+                      
+  </form>
+            
+            
+                <style>
+                    
+                    /*-DESIGN-*/
+                    
+                    #table2
+                    {
+                        background-color:black;
+                        background-image:url(ChatGPT%20Image%20Mar%2010,%202026,%2009_06_17%20PM.png);
+                        background-repeat: no-repeat;
+                        background-size: 1900px;
+                        background-position: center;
+                    }
+                    
+                    #table3
+                    {
+                        border-radius: 10px;
+                         background-color:gold;;
+                    }
+                    
+                    #table4
+                    {
+                        border-radius: 10px;
+                         background-color:gray;
+                    }
+                    
+                     #username{
+                       color:black;
+                    }
+                  #password
+                    {
+                    color: black;
+                    }
+                    /*-USERFORM FONTS-*/
+                    
+                    h2
+                    {
+                      color:gold;
+                    }
+                    
+                    body
+                    {
+                        font-size: 15   ;
+                        font-family:fantasy;
+                    }
+                    
+                    #submit
+                    {
+                        color: black;
+                         background-color: gold;
+                        border-radius: 60px;
+                    }
+                   
+                    form
+                    {
+                        background-color: goldenrod;
+                        padding: 100px;
+                        border-radius:40px;
+                        width:300px;
+                        background-position: center;
+                    }
+                    
+                    </style> 
+                      
+                <script>
+                
+                 var correctusername = "admin";
+                var correctpassword = "1234";
+
+                function checklogin()
+                {
+                var enteredusername = document.getElementById("username").value;
+                var enteredpassword = document.getElementById("password").value;
+
+                if (enteredusername === correctusername && enteredpassword === correctpassword)
+                {
+                window.location.href = "aboutme.html";
+                }
+                else
+                {
+                alert("Invalid username or password");
+                }
+                }
+
+                function clearForm()
+                {
+                document.getElementById("username").value = "";
+                document.getElementById("password").value = "";
+                }
+                    
+                      </script>
+</body> 
+    </head>
+</html>
